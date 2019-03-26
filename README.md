@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This project implements the TensorFlow Object Detection API to solve a real-time problem such as traffic light detection. It uses the Microsoft Common Objects in Context (COCO) pre-trained model called Single Shot Multibox Detector MobileNet from the TensorFlow Zoo for transfer learning. We used an NVIDIA GeForce GTX 1070 GPU to retrain the model for 20000 steps using the image data from the rosbags provided by Udacity. At the end of this, we obtained an accurate model that was able to identify the traffic signals at more than 90 percent accuracy.
+This project implements the TensorFlow Object Detection API to solve a real-time problem such as traffic light detection. It uses the Microsoft Common Objects in Context (COCO) pre-trained model called Single Shot Multibox Detector MobileNet from the TensorFlow Zoo for transfer learning. We used an NVIDIA GeForce GTX 1070 GPU to retrain the model for 20000 steps using the image data from the rosbags provided by Udacity. At the end of this, we obtained an accurate model that was able to identify the traffic signals at more than 90 percent accuracy. I thank [alex-lechner](https://github.com/alex-lechner/Traffic-Light-Classification) for putting such a detailed tutorial on how to setup and train tensorflow models.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Traditional approaches in machine learning for traffic light detection and class
 
 This project was implemented using transfer learning of the Microsoft Common Objects in Context (COCO) pre-trained model called Single Shot Multibox Detector (SSD) with MobileNet. A subset of the ImageNet dataset, which contains traffic lights, was used for further training to improve the performance. For this particular experiment, the entire training and the inferencing was done on an GeForce GTX 1070 GPU.
 
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOEWOfnHwBYcP33yrDop5KWJbAkaJjks5cmeRXwA%3D%3D)
+![](./results/red.png)
 
 ## Software Configuration
 
@@ -260,8 +260,7 @@ The sample images were extracted from the rosbag files. These images were given 
 We were able to get good results on our sample images and the model was able to detect the traffic light states with more than 90% accuracy.
 
 Below are some sample images.
-
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOEWOfnHwBYcP33yrDop5KWJbAkaJjks5cmeRXwA%3D%3D)
+![](./results/red.png)
 
 ![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/yellow.png?token=AleOEdqRoxVWCpRDpulRYLuQS7YHDV3tks5cmeT6wA%3D%3D)
 
