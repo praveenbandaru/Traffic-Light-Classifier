@@ -260,6 +260,7 @@ The sample images were extracted from the rosbag files. These images were given 
 We were able to get good results on our sample images and the model was able to detect the traffic light states with more than 90% accuracy.
 
 Below are some sample images.
+
 ![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOEWOfnHwBYcP33yrDop5KWJbAkaJjks5cmeRXwA%3D%3D)
 
 ![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/yellow.png?token=AleOEdqRoxVWCpRDpulRYLuQS7YHDV3tks5cmeT6wA%3D%3D)
