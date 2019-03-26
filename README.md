@@ -260,10 +260,10 @@ The sample images were extracted from the rosbag files. These images were given 
 We were able to get good results on our sample images and the model was able to detect the traffic light states with more than 90% accuracy.
 
 Below are some sample images.
-![](hhttps://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOEWOfnHwBYcP33yrDop5KWJbAkaJjks5cmeRXwA%3D%3D)
+![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOEWOfnHwBYcP33yrDop5KWJbAkaJjks5cmeRXwA%3D%3D)
 
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/yellow.png?token=AleOEX98rjzGGPdFNPXKRj1pqIcL6Bjzks5cmeMUwA%3D%3D)
+![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/yellow.png?token=AleOEdqRoxVWCpRDpulRYLuQS7YHDV3tks5cmeT6wA%3D%3D)
 
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/green.png?token=AleOEbsGzxYpNYufJylTsHoz8dvix0X0ks5cmeM6wA%3D%3D)
+![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/green.png?token=AleOEXPO-mkWf-DhnTcpS5Rduj5Afk1Qks5cmeUIwA%3D%3D)
 
 **[Take a look at the Jupyter Notebook](https://github.com/praveenbandaru/Traffic-Light-Classifier/blob/master/traffic_light_classification.ipynb) to see the results.**
