@@ -159,12 +159,41 @@ Hint: You can see the recorded footage of your ROSbag file by opening another, f
 1.  Configuring the LabelImg tool. Before starting with the annotation of images, the classes for labelling needs to be defined in the `LabelImg/data/predefined_classes.txt` file. In this case, there’s four classes which are `Red, Green, Yellow and Unknown`.
 2.  Launch labelimg.exe and then select the dataset folder by clicking the **OpenDir** icon on the left pane.
 3.  For each image that appears, draw a rectangular box across each traffic light by clicking the **Create RectBox** icon. These rectangular boxes are known as bounding boxes. Select the category **trafficlight** from the drop-down list that appears.
-4.  Repeat this process for every traffic light present in the image. Figure 2 shows an example of a completely annotated image.
+4.  Repeat this process for every traffic light present in the image. Below figure shows an example of a completely annotated image.
 
 ![Annotated image](https://software.intel.com/sites/default/files/managed/a7/94/traffic-light-detection-using-tensorflow-object-detection-api-fig2.png)
 Once the annotations for an image are completed, save the image to any folder.
 
-The corresponding eXtensible Markup Language (XML) files will be generated for each image in the specified folder. XML files contain the coordinates of the bounding boxes, filename, category, and so on for each object within the image. These annotations are the ground truth boxes for comparison. Figure 3 represents the XML file of the corresponding image in Figure 2.
+The corresponding eXtensible Markup Language (XML) files will be generated for each image in the specified folder. XML files contain the coordinates of the bounding boxes, filename, category, and so on for each object within the image. These annotations are the ground truth boxes for comparison.The XML file for a sample image in as below.
+
+```
+<annotation>
+	<folder>green</folder>
+	<filename>left0000.jpg</filename>
+	<path>D:\images\green\left0000.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1368</width>
+		<height>1096</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Green</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>647</xmin>
+			<ymin>417</ymin>
+			<xmax>667</xmax>
+			<ymax>473</ymax>
+		</bndbox>
+	</object>
+</annotation>
+```
 
 ### 3. Label map preparation
 
