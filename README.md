@@ -120,7 +120,7 @@ Pre-trained models: Since modern ConvNets takes weeks to train from scratch, it 
 In this project, we used a pre-trained model for the transfer learning. The advantage of using a pre-trained model is that instead of building the model from scratch, a model trained for a similar problem can be used as a starting point for training the network. Many pre-trained models are available. This experiment used the COCO pre-trained model/checkpoints SSD MobileNet from the TensorFlow Zoo. This model was used as an initialization checkpoint for training. The model was further trained with images of traffic lights from ImageNet. This fine-tuned model was used for inference.
 
 Now let’s look at how to implement the solution. The TensorFlow Object Detection API has a series of steps to follow, as shown in below figure.
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/imageedit_5_6898013867.png?token=AleOEeTR8pMU4QfR7gRjjVLE2ORMXD2sks5cmdadwA%3D%3D)
+![](./results/imageedit_5_6898013867.png)
 ### 1. Dataset download
 
 #### 2.1 Extract images from a ROSbag file
@@ -217,7 +217,7 @@ You will need to [download the .config file for the model you've chosen](https:/
 Now it's time to select a model which you will train. You can [see the stats of and download the Tensorflow models from the model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).  We selected the following model [ssd_mobilenet_v1_coco_11_06_2017](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) for our training.
 The final task is to assemble all that has been configured so far and run the training job (see Figure 4). Once the above steps are completed, the training file is executed. By default, the training job will continue to run until the step count reaches 20000. The models will be saved at various checkpoints.
 
-![Training pipeline](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/imageedit_7_5493518341.png?token=AleOESal-mYMg9dRTN3QQNlZpSQYn_kTks5cmeCOwA%3D%3D)
+![Training pipeline](./results/imageedit_7_5493518341.png)
 Follow the steps to train the model:
 -   Clone your classification repository and create the folders `models` & `data` (in your project folder).
     
@@ -254,7 +254,7 @@ When training is finished the trained model needs to be exported as a frozen inf
 
 The sample images were extracted from the rosbag files. These images were given to our model trained using transfer learning. After the images pass through the Object Detection pipeline, the bounding boxes will be drawn on the detected images.
 
-![Inference pipeline](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/imageedit_9_2584405846.png?token=AleOEaizk_zlvCZ4xAMlpqYIrbLGWj4Kks5cmeChwA%3D%3D)
+![Inference pipeline](./results/imageedit_9_2584405846.png)
 ## Experimental Results
 
 We were able to get good results on our sample images and the model was able to detect the traffic light states with more than 90% accuracy.
@@ -262,8 +262,8 @@ We were able to get good results on our sample images and the model was able to 
 Below are some sample images.
 ![](./results/red.png)
 
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/yellow.png?token=AleOEdqRoxVWCpRDpulRYLuQS7YHDV3tks5cmeT6wA%3D%3D)
+![](./results/yellow.png)
 
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/green.png?token=AleOEXPO-mkWf-DhnTcpS5Rduj5Afk1Qks5cmeUIwA%3D%3D)
+![](./results/green.png)
 
 **[Take a look at the Jupyter Notebook](https://github.com/praveenbandaru/Traffic-Light-Classifier/blob/master/traffic_light_classification.ipynb) to see the results.**
