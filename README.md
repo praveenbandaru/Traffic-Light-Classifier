@@ -260,6 +260,7 @@ The sample images were extracted from the rosbag files. These images were given 
 We were able to get good results on our sample images and the model was able to detect the traffic light states with more than 90% accuracy.
 
 Below are some sample images.
+
 ![](./results/red.png)
 
 ![](./results/yellow.png)
