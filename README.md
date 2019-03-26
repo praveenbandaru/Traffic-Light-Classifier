@@ -12,7 +12,7 @@ Traditional approaches in machine learning for traffic light detection and class
 
 This project was implemented using transfer learning of the Microsoft Common Objects in Context (COCO) pre-trained model called Single Shot Multibox Detector (SSD) with MobileNet. A subset of the ImageNet dataset, which contains traffic lights, was used for further training to improve the performance. For this particular experiment, the entire training and the inferencing was done on an GeForce GTX 1070 GPU.
 
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOERYl9emAyx00DDs8vZWq0gsPmJeUks5cmdAIwA%3D%3D)
+![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOEWOfnHwBYcP33yrDop5KWJbAkaJjks5cmeRXwA%3D%3D)
 
 ## Software Configuration
 
@@ -260,6 +260,10 @@ The sample images were extracted from the rosbag files. These images were given 
 We were able to get good results on our sample images and the model was able to detect the traffic light states with more than 90% accuracy.
 
 Below are some sample images.
-![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOERYl9emAyx00DDs8vZWq0gsPmJeUks5cmdAIwA%3D%3D)![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/yellow.png?token=AleOEX98rjzGGPdFNPXKRj1pqIcL6Bjzks5cmeMUwA%3D%3D)![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/green.png?token=AleOEbsGzxYpNYufJylTsHoz8dvix0X0ks5cmeM6wA%3D%3D)
+![](hhttps://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/red.png?token=AleOEWOfnHwBYcP33yrDop5KWJbAkaJjks5cmeRXwA%3D%3D)
+
+![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/yellow.png?token=AleOEX98rjzGGPdFNPXKRj1pqIcL6Bjzks5cmeMUwA%3D%3D)
+
+![](https://raw.githubusercontent.com/praveenbandaru/Traffic-Light-Classifier/master/results/green.png?token=AleOEbsGzxYpNYufJylTsHoz8dvix0X0ks5cmeM6wA%3D%3D)
 
 **[Take a look at the Jupyter Notebook](https://github.com/praveenbandaru/Traffic-Light-Classifier/blob/master/traffic_light_classification.ipynb) to see the results.**
