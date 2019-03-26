@@ -161,7 +161,7 @@ Hint: You can see the recorded footage of your ROSbag file by opening another, f
 3.  For each image that appears, draw a rectangular box across each traffic light by clicking the **Create RectBox** icon. These rectangular boxes are known as bounding boxes. Select the category **trafficlight** from the drop-down list that appears.
 4.  Repeat this process for every traffic light present in the image. Below figure shows an example of a completely annotated image.
 
-![Annotated image](https://software.intel.com/sites/default/files/managed/a7/94/traffic-light-detection-using-tensorflow-object-detection-api-fig2.png)
+![Annotated image](./results/labelImg.png)
 Once the annotations for an image are completed, save the image to any folder.
 
 The corresponding eXtensible Markup Language (XML) files will be generated for each image in the specified folder. XML files contain the coordinates of the bounding boxes, filename, category, and so on for each object within the image. These annotations are the ground truth boxes for comparison.The XML file for a sample image in as below.
