@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This project implements the TensorFlow Object Detection API to solve a real-time problem such as traffic light detection. It uses the Microsoft Common Objects in Context (COCO) pre-trained model called Single Shot Multibox Detector MobileNet from the TensorFlow Zoo for transfer learning. We used an NVIDIA GeForce GTX 1070 GPU to retrain the model for 20000 steps using the image data from the rosbags provided by Udacity. At the end of this, we obtained an accurate model that was able to identify the traffic signals at more than 90 percent accuracy. I thank [alex-lechner](https://github.com/alex-lechner/Traffic-Light-Classification) for putting such a detailed tutorial on how to setup and train tensorflow models.
+This project implements the [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) to solve a real-time problem such as traffic light detection. It uses the Microsoft Common Objects in Context ([COCO](http://cocodataset.org/#home)) pre-trained model called [Single Shot Multibox Detector MobileNet](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) from the [TensorFlow Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) for transfer learning. We used an NVIDIA GeForce GTX 1070 GPU to retrain the model for 20000 steps using the image data from the rosbags([link1](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic_light_bag_file.zip)|[link2](https://drive.google.com/file/d/0B2_h37bMVw3iYkdJTlRSUlJIamM/view?usp=sharing)) provided by Udacity. At the end of this, we obtained an accurate model that was able to identify the traffic signals at more than 90 percent accuracy. I thank [alex-lechner](https://github.com/alex-lechner/Traffic-Light-Classification) for putting such a detailed tutorial on how to setup and train tensorflow models.
 
 ## Introduction
 
@@ -10,7 +10,7 @@ With the advancements in technology, there has been a rapid increase in the deve
 
 Traditional approaches in machine learning for traffic light detection and classification are being replaced by deep learning methods to provide state-of-the-art results. However, these methods create various challenges. For example, the distortion or variation in images due to orientation, illumination, and speed fluctuation of vehicles could result in false recognition.
 
-This project was implemented using transfer learning of the Microsoft Common Objects in Context (COCO) pre-trained model called Single Shot Multibox Detector (SSD) with MobileNet. A subset of the ImageNet dataset, which contains traffic lights, was used for further training to improve the performance. For this particular experiment, the entire training and the inferencing was done on an GeForce GTX 1070 GPU.
+This project was implemented using transfer learning of the Microsoft Common Objects in Context ([COCO](http://cocodataset.org/#home)) pre-trained model called Single Shot Multibox Detector ([SSD](https://arxiv.org/abs/1512.02325)) with [MobileNet](https://arxiv.org/abs/1704.04861). A subset of the images obtained from rosbag files, which contains traffic lights, were used for further training to improve the performance. For this particular experiment, the entire training and the inferencing was done on an GeForce GTX 1070 GPU.
 
 ![](./results/red.png)
 
@@ -162,6 +162,7 @@ Hint: You can see the recorded footage of your ROSbag file by opening another, f
 4.  Repeat this process for every traffic light present in the image. Below figure shows an example of a completely annotated image.
 
 ![Annotated image](./results/labelImg.png)
+
 Once the annotations for an image are completed, save the image to any folder.
 
 The corresponding eXtensible Markup Language (XML) files will be generated for each image in the specified folder. XML files contain the coordinates of the bounding boxes, filename, category, and so on for each object within the image. These annotations are the ground truth boxes for comparison.The XML file for a sample image in as below.
@@ -247,6 +248,7 @@ Now it's time to select a model which you will train. You can [see the stats of 
 The final task is to assemble all that has been configured so far and run the training job (see Figure 4). Once the above steps are completed, the training file is executed. By default, the training job will continue to run until the step count reaches 20000. The models will be saved at various checkpoints.
 
 ![Training pipeline](./results/imageedit_7_5493518341.png)
+
 Follow the steps to train the model:
 -   Clone your classification repository and create the folders `models` & `data` (in your project folder).
     
